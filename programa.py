@@ -1,8 +1,10 @@
 from turmas import *
 from alunos import *
+from relacoes import *
 
 turmas=[]
 alunos=[]
+relacoes=[]
 
 print('''
     1 - Criar turma
@@ -30,17 +32,32 @@ while True:
         cadastrar_aluno(alunos)
         print()
 
-    elif op==4:
+    elif op==3:
         print()
-        print(listar_alunos(alunos))
+        adicionar_aluno_na_turma(turmas, alunos, relacoes)
         print()
 
-    elif op==5:
+    elif op==4:
         print()
         print(listar_turmas(turmas))
         print()
 
     elif op==5:
+        print()
+        print(listar_alunos(alunos))
+        print()
+
+    elif op==6:
+        print()
+        listar_alunos_da_turma(relacoes, alunos, turmas)
+        print()
+    
+    elif op==7:
+        print()
+        remover_aluno_da_turma(relacoes)
+        print()
+
+    elif op==0:
         print("Saindo...")
         break
 
