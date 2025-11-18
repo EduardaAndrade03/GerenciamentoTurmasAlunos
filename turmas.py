@@ -1,9 +1,3 @@
-# crir_turm(turms)
-# Pede nome da turma e adiciona:
-# { "id": 1,
-# "nome": "1o Ano A" }
-# ID gerado automaticamente (use a função random)
-
 from tabulate import tabulate
 import random
 
