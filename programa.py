@@ -49,7 +49,7 @@ while True:
 
     elif op==6:
         print()
-        listar_alunos_da_turma(relacoes, alunos, turmas)
+        print(listar_alunos_da_turma(relacoes, alunos))
         print()
     
     elif op==7:
